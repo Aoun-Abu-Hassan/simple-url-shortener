@@ -1,0 +1,20 @@
+{
+  "name": "simple-url-shortener",
+  "version": "1.0.0",
+  "description": "This URL shortener is a simple example of how to build a web application with Node.js, Express.js, and MongoDB. It provides a basic API for shortening URLs and redirecting users to the original URL.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "aoun-abu-hassan",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

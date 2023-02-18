@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo
+    volumes:
+      - data:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=root
+    ports: # for development purposes
+      - 30000:27017
+  server:
+    build: ./
+    volumes: # for development purposes
+      - ./:/app
+      - /app/node_modules
+    ports:
+      - 3000:3000
+volumes:
+  data:
